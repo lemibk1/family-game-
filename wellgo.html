@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text Animation</title>
+
+  <style>
+    body {
+      height: 100%;
+    }
+
+    .text {
+      margin-top: 50px;
+
+
+
+
+    }
+
+    #a {
+      top: 1%;
+      right: 2%;
+    }
+
+    #b {
+      bottom: 5%;
+      left: 2%;
+    }
+
+    #c {
+      bottom: 5%;
+      right: 2%;
+    }
+
+    #d {
+      top: 2%;
+      left: 3%;
+    }
+
+
+    img {
+      position: absolute;
+      top: 80%;
+      left: 80%;
+    }
+
+    .animated-text {
+      font-size: 6em;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 5px;
+      animation: colorChange1 3s infinite;
+    }
+
+    .animated-text1 {
+      font-size: 6em;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 5px;
+      animation: colorChange 3s infinite;
+    }
+
+    .animated {
+      font-size: 6em;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 5px;
+      animation: colorChange2 3s infinite;
+    }
+
+    .back-btc {
+    
+      bottom:2%;
+      left: 50%;
+      position: absolute;
+      border-style: none;
+      padding: 2%;
+    }
+
+
+    @keyframes colorChange {
+      0% {
+        color: red;
+      }
+
+      25% {
+        color: green;
+      }
+
+      50% {
+        color: blue;
+      }
+
+      75% {
+        color: yellow;
+      }
+
+      100% {
+        color: purple;
+      }
+    }
+
+    @keyframes colorChange1 {
+      0% {
+        color: purple;
+      }
+
+      25% {
+        color: blue;
+      }
+
+      50% {
+        color: green;
+      }
+
+      75% {
+        color: yellow;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    @keyframes colorChange2 {
+      0% {
+        color: blue;
+      }
+
+      25% {
+        color: green;
+      }
+
+      50% {
+        color: red;
+      }
+
+      75% {
+        color: yellow;
+      }
+
+      100% {
+        color: purple;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text" style="margin-top: 150px;">
+    <div class="animated-text">
+      PUT !!!
+    </div>
+    <div class="animated">
+    ANY !!!
+    </div>
+    <div class="animated-text1">
+      TEXT <br>HERE
+    </div>
+    <img src="images.png" alt="image1" id="a">
+    <img src="images.png" alt="image2" id="d">
+    <img src="images.png" alt="image3" id="b">
+    <img src="images.png" alt="image4" id="c">
+  </div>
+  <button class="back-btc" onclick="window.location.href='./index.html';">...</button>
+</body>
+
+</html>
